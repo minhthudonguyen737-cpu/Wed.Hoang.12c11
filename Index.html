@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang cá nhân - Nguyễn Thanh Hoang</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #6a11cb);
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.header {
+    background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    object-position: center 35%;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+.content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section {
+    background: #f3f6ff;
+    border-radius: 15px;
+    padding: 22px;
+    border-left: 5px solid #4364F7;
+    transition: 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #ccd5ee;
+}
+
+.section h2 {
+    color: #2455a4;
+    font-size: 19px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d5def5;
+}
+
+.info-list, .goal-list {
+    list-style: none;
+}
+
+.info-list li, .goal-list li {
+    margin-bottom: 13px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.info-list strong {
+    color: #244c8a;
+}
+
+.tag {
+    display: inline-block;
+    background: #dce8ff;
+    color: #2455a4;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 13px;
+}
+
+.description {
+    margin-top: 12px;
+    color: #555;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.dream-box {
+    background: #fff2cf;
+    color: #8a6200;
+    padding: 18px;
+    border-radius: 12px;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+.goal-list li::before {
+    content: "✔ ";
+    color: #219653;
+    font-weight: bold;
+}
+
+.footer {
+    background: #eaf0ff;
+    color: #45618d;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+    .content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="1000021037.jpg"
+             alt="Ảnh đại diện"
+             class="avatar">
+
+        <h1>NGUYỄN THANH HOANG</h1>
+        <p>Học sinh lớp 12C11 - THPT Nguyễn Huệ</p>
+    </div>
+
+    <div class="content">
+
+        <div class="section">
+            <h2>📋 Thông tin cá nhân</h2>
+            <ul class="info-list">
+                <li><strong>Họ và tên:</strong> Nguyễn Thanh Hoang</li>
+                <li><strong>Ngày sinh:</strong> 11/10/2009</li>
+                <li><strong>Trường:</strong> THPT Nguyễn Huệ</li>
+                <li><strong>Lớp:</strong> 12C11</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⚽ Sở thích</h2>
+            <span class="tag">Chơi thể thao</span>
+            <span class="tag">Khám phá điều mới</span>
+            <span class="tag">Vận động</span>
+
+            <p class="description">
+                Thích các hoạt động ngoài trời, rèn luyện
+                thể lực và tìm tòi những điều mới lạ
+                xung quanh cuộc sống.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>⭐ Ước mơ</h2>
+            <div class="dream-box">
+                🎖️ Trở thành Sĩ quan Quân đội Nhân dân Việt Nam.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Mục tiêu</h2>
+            <ul class="goal-list">
+                <li>Cố gắng học tập thật tốt.</li>
+                <li>Tốt nghiệp THPT với kết quả cao.</li>
+                <li>Tập trung rèn luyện sức khỏe thể lực.</li>
+                <li>Không ngừng trau dồi kiến thức và kỹ năng.</li>
+                <li>Phấn đấu thực hiện ước mơ của bản thân.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 - Trang cá nhân Nguyễn Thanh Hoang
+        <br>
+        Cảm ơn bạn đã ghé thăm!
+    </div>
+
+</div>
+
+</body>
+</html>
